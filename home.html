@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8">	
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="home.css" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+#id1{
+border: 1px solid black;
+border-radius: 4px;
+}
+.a{float:left;}.b{float:right;}
+.footer{background-color:black;color:white;text-align: center;padding-top:4px;padding-bottom:4px;}
+.div1{border-radius: 8px;border:1.5px solid black; padding: 60px;text-align: center;overflow: hidden; background-image:url("c1.png");background-size: cover;}
+#i1{color: red}
+#i2{color: brown}
+body{background-color:#F0E9C3;}
+.footer1{background-color:pink;color:blue;text-align: center;padding-top:4px;padding-bottom:4px;margin-top:100px;}
+</style>
+<script>function logout(){var s= confirm("click on OK to logout");
+if(s==true){location.href="login.html";}
+}</script>
+</head>
+<body>
+	<script>
+var i=0;
+var images=[];
+var time=4000;
+images[0]='s1.jpg';
+images[1]='s2.jpg';
+images[2]='s3.jpg';
+images[3]='s4.jpg';
+function change(){
+document.slide.src = images[i];
+if(i<images.length-1)
+{i++;
+}
+else{
+i=0;}
+setTimeout("change()",time);
+}
+window.onload=change;
+</script>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class=" a navbar-header">
+			<a class="navbar-brand" href="#">E-Groceries</a></div>
+		<div>
+		<ul class="b nav navbar-nav">
+			<li><a href="home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+				<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> cart</a></li>
+				<li><a href="Feedback.html"><span class="glyphicon glyphicon-edit"></span> Feedback</a></li>
+				<li><a href="Settings.htm"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			<li><a 
+				onclick="logout()"><span class="glyphicon glyphicon-off"></span> Logout</a></li></ul></div></nav><br><br><br>
+
+	<div class="container-fluid">
+		<div class="row"><div class="col-sm-2 col-md-2"></div>
+<div class="col-sm-8 col-md-8 "><img id="id1" name="slide" height="350px" width="1000px"></div>
+<div class="col-sm-1 col-md-1"></div></div>
+<div class="container-fluid">
+<div class="row"><div class="col-sm-4 col-md-4"></div>
+<div class="col-sm-4 col-md-4 div1">
+	    <h2><strong>Shop With Us</strong></h2><br>
+		<p><b id="i2">Celebrate This Diwali with E.Groceries.com</b></p>
+		<p><h4><b id="i1">Flat 30% Off on everthing</b><h4> </p><br><br>
+		<p>click on the button for shopping</p><br>
+		<button class="btn btn-primary" onclick="window.location.href='products.html'">Shop Now</button></div>
+<div class="col-sm-4 col-md-4"></div>
+</div>
+<div class="row">
+		<div class="footer1">
+			  <div class="h2"><strong><h3>Contact us @ : E-groceries.com</strong></h3></strong></div> 
+				<p>
+					India's Largest E-Mart,Lovely Professional University, Jalandhar-Delhi, G.T. Road, Phagwara, Punjab (INDIA) -144411.<br>
+                    Website: http://www.E-Groceries.com<br>
+                    phone: +91-9877458430 .
+Toll Free: 1800 102 9999
+				</p></div>
+				
+			</div>
+</div><div class="row"><footer class="footer"><small>&copy; 2019 www.E-grocerries.com All Rights Reserved</small></footer></div>
+</div></body></html> 

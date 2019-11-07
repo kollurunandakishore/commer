@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8">	
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="home.css" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+.footer{background-color:black;color:white;text-align: center;padding-top:4px;padding-bottom:4px;}
+.a{float:left;}.b{float:right;}
+.footer{background-color:black;color:white;text-align: center;padding-top:4px;padding-bottom:4px;}
+#h1{color:brown;}
+.cv:focus{color:blue;}
+.cv{border:1px solid black;color:blue;}
+.btn-info{padding:12px 30px;}
+</style>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>var check = function(){
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('password').style.border = '2px solid green';
+ document.getElementById('confirm_password').style.border = '2px solid green';
+ document.getElementById("Button").disabled = false; }
+   else {
+    document.getElementById('password').style.border = '2px solid red';
+ document.getElementById('confirm_password').style.border = '2px solid red';
+ document.getElementById("Button").disabled = true;
+  }}</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class=" a navbar-header">
+			<a class="navbar-brand" href="home.html">E-Groceries</a></div>
+		<div>
+		<ul class="b nav navbar-nav">
+			<li><a href="#"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+				<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> cart</a></li>
+				<li><a href="feedback.html"><span class="glyphicon glyphicon-edit"></span> Feedback</a></li>
+				<li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			<li><a onclick="logout()"><span class="glyphicon glyphicon-off"></span> Logout</a></li></ul></div></nav><br><br><br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-ms-3 col-sm-3"></div>
+		<form name="myform" class=" col-sm-6 col-md-6" action="login.html"><div class="form-group" method="post">
+			<center><h1 style="color:green">Change Password</h1></center></div>
+			<div>
+<label id="h1">current password:</label>
+  <input type="password" id="c_password" class="form-control cv" name="c_password"  pattern=".{6,}"  placeholder="enter current password" onkeypress="check1()"required/> </div>
+			<div><label id="h1">new password :</label>
+  <input name="password" id="password" class="form-control cv" type="password"  pattern=".{6,}"placeholder="enter new password" onkeyup='check(); required'  /></div>
+<div>
+<label id="h1">confirm password:</label>
+  <input type="password" class="form-control cv" pattern=".{6,}"name="confirm_password"   id="confirm_password" placeholder="Re-enter new password" required onkeyup='check();' /> 
+  </div><br>
+  <button id="Button" class="btn btn-info" onkeyup="check()"><strong>Change</strong></button>
+		</form></div></div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="row"><footer class="footer"><small>&copy; 2019 www.E-grocerries.com All Rights Reserved</small></footer></div></body></html>

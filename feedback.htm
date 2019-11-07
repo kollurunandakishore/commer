@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8">	
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+.bd{background-image: url("../ca3/d3.jpg");background-size:cover;height:100vh;width:100%;}
+.form-conainer{border:0px solid #fff;padding:30px; margin-top:10vh;border:2px solid black;background-color:white;border-radius: 4px;}
+#h{color:solid red;text-align: center;}
+label{color:brown;}
+.footer{background-color:black;color:white;text-align: center;padding-top:4px;padding-bottom:4px;padding-left:-10px}
+.footer1{background-color:pink;color:blue;text-align: center;padding-top:4px;padding-bottom:4px;}
+.h2{color:red;}
+.a{float:left;}.b{float:right;}
+.ta,.inn{background-color: silver;color:solid black;}
+</style>
+<script>function logout(){var s= confirm("click on OK to logout");
+if(s==true){location.href="login.html";}
+}</script>
+</head>
+<body>
+<div class="container-fluid bd">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+		<div class=" a navbar-header">
+			<a class="navbar-brand" href="#">E-Groceries</a></div>
+		<div>
+		<ul class="b nav navbar-nav">
+			<li><a href="home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+				<li class="in"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+				<li class="in"><a href="feedback.htm"><span class="glyphicon glyphicon-edit"></span> Feedback</a></li>
+				<li class="in"><a href="settings.html"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+			<li class="in"><a onclick="logout()"><span class="glyphicon glyphicon-off"></span> Logout</a></li></ul></div></nav>
+
+	<div class="row"><div class=" col-md-3 col-xs-3 col-xs-12"></div>
+	<div class=" col-md-6 col-xs-6 col-xs-12">
+	<form class="form-conainer" method="post" action="home.html">
+		<h1 id="h"> Feedback</h1>
+		<div class="form-group">
+		<label>Subject</label>
+		<input  class="form-control inn" type="text" name="subject" placeholder="enter user subject in 5 - 6 words" required></div>
+		<div class="form-group">
+		<label>enter your Feedback Here</label>
+		<textarea  class="form-control ta"  type="text area" name="feed" placeholder="enter Feedback " maxlength="300" rows="7" columns="10" required></textarea></div>
+		<button class="btn-info btn-block">Submit</button></form></div><!--btn-success,info,danger,warning,link,basic,default,primary-->
+		<div class=" col-md-3 col-sm-3 col-xs-12"></div></div><br><br><br>
+		<div class="row">
+		<div class="footer1">
+			  <div class="h2"><strong><h3>Contact us @ : E-groceries.com</strong></h3></strong></div> 
+				<p>
+					India's Largest E-Mart,Lovely Professional University, Jalandhar-Delhi, G.T. Road, Phagwara, Punjab (INDIA) -144411.<br>
+                    Website: http://www.E-Groceries.com<br>
+                    phone: +91-9877458430 .
+Toll Free: 1800 102 9999
+				</p></div>
+				
+			</div>
+     <div class="row"><footer class="footer"><small>&copy; 2019 www.E-grocerries.com All Rights Reserved</small></footer></div>
+	</div>
+
+</body>
+</html>

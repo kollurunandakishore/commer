@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8">	
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="home.css" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+a,a:hover{color: white;}
+tbody,th,td{border:2px solid black;height:50px;text-align: center;background-color: white;}
+.a{float:left;}.b{float:right;}
+.footer{background-color:black;color:white;text-align: center;padding-top:4px;padding-bottom:4px;}
+body{background-color:silver;}</style>
+<script>function logout(){var s= confirm("click on OK to logout");
+if(s==true){location.href="login.html";}
+}</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class=" a navbar-header">
+			<a class="navbar-brand" href="#">E-Groceries</a></div>
+		<div>
+		<ul class="b nav navbar-nav">
+			<li><a href="home.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+				<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> cart</a></li>
+				<li><a href="feedback.htm"><span class="glyphicon glyphicon-edit"></span> Feedback</a></li>
+				<li><a href="settings.html"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			<li><a 
+				onclick="logout()"><span class="glyphicon glyphicon-off"></span> Logout</a></li></ul></div></nav>
+<br><br><br>
+	<div class="container-fluid ba">
+	<div class="row">
+	<div class="col-ms-2 col-sm-2"></div>
+	<div class="col-ms-8 col-sm-8">
+		<table class="table table-boxed"><br><br>
+			<font size="+3"><b>Cart :</b></font><br>
+			<br><tbody>
+				<tr><th>Item Number</th><th>Item Name</th><th>Price</th><th></th></tr>
+				<tr><td></td><td></td><td></td><td></td></tr>
+				<tr><td></td><td>Total</td><td>Rs 0/-</td><td><button class="btn btn-primary" onclick="window.location.href='success.htm'">Confirm Order</button></td></tr>
+				</tbody></table></div>
+				<div class="col-ms-2 col-sm-2"></div>
+</div></table></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="row"><footer class="footer"><small>&copy; 2019 www.E-grocerries.com All Rights Reserved</small></footer></div></body></html>

@@ -1,0 +1,23 @@
+.bg{background-image: url("d11.jpg");background-size:cover;height:140vh;width:100%;}
+.bx{background-image: url("d10.jpg");background-size:cover;height:140vh;width:100%;}
+.form-conainer{border:0px solid #fff;padding:30px; margin-top:20vh;box-shadow: 2px 6px 25px 8px rgba(0,0,0,0.75);;
+Copy Text}
+#h{color:red;text-align: center;}
+#h1{color:#C81931; text-align: center;}
+b{color:solid black;text-align: center;}
+label{color:red;}
+.a{float:left;}.b{float:right;}
+.h5{color:white;text-align:center;}
+.h5:hover{color:red;text-align:center;}
+.footer{background-color:black;color:white;text-align: center;padding-top:4px;padding-bottom:4px;}
+.footer1{background-color:pink;color:blue;text-align: center;padding-top:4px;padding-bottom:4px;}
+.h2{color:red;}
+.inp{background-color:black;color:white;}
+.btn-success{padding:10px 50px;}
+.btn-primary:hover,.btn-primary:active{padding:10px 60px;background-color:#1EC01D;border:0.5px;border-radius: 4px;}
+.btn-primary{padding:10px 60px;background-color:green;border:0.5px;border-radius: 4px;}
+
+.btn-success:hover{padding:10px 60px;background-color:#902E92;border:0px;border-radius: 4px;}
+.btn-success{padding:10px 60px;background-color:#812083;border:0px;border-radius: 4px;}
+#h4{color:#28BEB6;font-style:italic; }
+.in{padding-right:10px;padding-left:10px;}

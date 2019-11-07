@@ -1,0 +1,70 @@
+<html>
+<head>		
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="login.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>var passval = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+     document.getElementById('password').style.border = '2px solid green';
+ document.getElementById('confirm_password').style.border = '2px solid green';
+ document.getElementById("button").disabled = false;
+  } else {
+    document.getElementById('password').style.border = '2px solid red';
+ document.getElementById('confirm_password').style.border = '2px solid red';
+ document.getElementById("button").disabled = true;
+  }
+}
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+		<div class=" a navbar-header">
+			<a class="navbar-brand" href="#">E-Groceries.</a></div>
+		<div>
+		<ul class="b nav navbar-nav">
+			
+				<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> <b>Login</b></a></li>
+				<li><a href="signup.htm"><span class="glyphicon glyphicon-book"></span> <b>Sign Up</b></a></li></ul>
+				</nav>
+<div class="container-fluid bg">
+	<div class="row">
+	<div class=" col-md-3 col-sm-3 col-xs-12"></div>
+	<div class=" col-md-5 col-sm-5 col-xs-12">
+	<form name="myform" class="form-conainer" method="post" action="home.html">
+		<h1 id="h"><strong>Sign Up</strong></h1>
+		<div class="form-group">
+		<label><b>First Name</b> *</label>
+		<input  class="form-control inp" type="text" name="first name" placeholder="enter first name" required></div>
+		<div class="form-group">
+		<label><b>Middle Name</b></label>
+		<input  class="form-control inp" type="text" name="middle name" placeholder="enter  middle name"></div>
+		<div class="form-group">
+		<label><b>last Name</b> *</label>
+		<input  class="form-control inp" type="text" name="username" placeholder="enter last name" required></div>
+		<div class="form-group">
+		<label><b>Password</b> *</label>
+		<input id="password"class="form-control inp"  type="password" name="password" placeholder="enter password" required  minlength="6" onkeyup='passval()';></div>
+		<div class="form-group">
+		<label><b>Confirm Password </b>*</label>
+		<input  id="confirm_password"class="form-control inp"  type="password" name="confirm" placeholder="re-enter password" required  minlength="6"  onkeyup='passval()';
+		><br>
+		<span id="id1"></span></div>
+		<div class="form-group">
+		<label><b>E-Mail </b>*</label>
+		<input type="email" class="form-control inp"name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></div>
+		<div class="form-group">
+		<label><b>Phone number</b> *</label>
+		<input  class="form-control inp"  type="tel" name="phone" placeholder="enter your 10 digit phone.no"  pattern="^\d{10}$"required></div>
+		<center><button id="Button" class="btn-primary" onkeyup='passval()'><strong>Register</strong></button></center><br><br>
+	    <p class="h5">Note: places with * must be filled</p></form>
+		</div><!--btn-success,info,danger,warning,link,basic,default,primary-->
+		<div class=" col-md-4 col-sm-4 col-xs-12">
+	</div><br></div><br>
+     <div class="row"><footer class="footer"><small>&copy; 2019 www.E-grocerries.com All Rights Reserved</small></footer></div>
+	</div>
+</body>
+</html>
